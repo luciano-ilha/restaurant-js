@@ -1,4 +1,8 @@
 import img from '../assets/lph_logo.png';
+import insta from '../assets/instagram-icon.png';
+import face from '../assets/facebook-icon.png';
+import twitter from '../assets/twitter-icon.png';
+import mail from '../assets/email-icon.png';
 
 const mainContent = document.getElementById('content');
 const menuEl = document.createElement('div');
@@ -55,6 +59,37 @@ const homeBanner = () => {
   bannerContent.appendChild(bannerText);
 }
 
+const homeFooter = () => {
+  const homeFooter = document.createElement('div');
+  homeFooter.classList.add('footer', 'd-flex');
+  mainContent.appendChild(homeFooter);
+
+  const footerBox = document.createElement('div');
+  footerBox.classList.add('footer-box', 'd-flex');
+  homeFooter.appendChild(footerBox);
+
+  const boxItem1 = new Image();
+  boxItem1.src = insta;
+  boxItem1.classList.add('footer-box-item');
+  footerBox.appendChild(boxItem1);
+
+  const boxItem2 = new Image();
+  boxItem2.src = face;
+  boxItem2.classList.add('footer-box-item2');
+  footerBox.appendChild(boxItem2);
+
+  const boxItem3 = new Image();
+  boxItem3.src = twitter;
+  boxItem3.classList.add('footer-box-item2');
+  footerBox.appendChild(boxItem3);
+
+  const boxItem4 = new Image();
+  boxItem4.src = mail;
+  boxItem4.classList.add('footer-box-item');
+  footerBox.appendChild(boxItem4);
+}
+
 content();
 navigation();
 homeBanner();
+homeFooter();
