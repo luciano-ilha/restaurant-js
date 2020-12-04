@@ -1,5 +1,26 @@
 $primary: rgb(156, 0, 246);
+$title-font: 'Nerko One', cursive;
+$text-font: 'Do Hyeon', sans-serif;
 
-.title {
-  color: $primary;
+.d-flex {
+  display: flex;
+}
+
+.nav {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+  padding: 20px 50px;
+  img {
+    width: 120px;
+  }
+  &-menu {
+    justify-content: space-between;
+    width: 350px;
+    &-item {
+      font-family: $title-font;
+      font-size: 33px;
+    }
+  }
 }
