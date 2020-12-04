@@ -1,26 +1,84 @@
-$primary: rgb(156, 0, 246);
+$primary: rgb(247, 214, 5);
+$secondary: rgb(217, 42, 66);
 $title-font: 'Nerko One', cursive;
-$text-font: 'Do Hyeon', sans-serif;
+$text-font: 'Yeon Sung', cursive;;
 
 .d-flex {
   display: flex;
+}
+
+#content {
+  flex-direction: column;
+  background-color: $primary;
+  z-index: -1;
 }
 
 .nav {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: max-content;
-  padding: 20px 50px;
+  padding: 10px 50px;
   img {
-    width: 120px;
+    width: 140px;
   }
   &-menu {
     justify-content: space-between;
-    width: 350px;
+    width: 355px;
     &-item {
       font-family: $title-font;
       font-size: 33px;
+      letter-spacing: 1.1px;
+      color: $secondary;
+      &:hover {
+        cursor: pointer;
+        animation: color-change 0.5s infinite;
+          @keyframes color-change {
+            0% { color: $secondary; }
+            50% { color: $primary; }
+            100% { color: $secondary; }
+          }
+      }
+    }
+  }
+}
+
+.home {
+  width: 100%;
+  height: max-content;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mask {
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  &-content {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+    &-title {
+      font-family: $text-font;
+      font-size: 75px;
+      color: $secondary;
+      margin-bottom: 40px;
+      text-shadow: 1px 1px $primary;
+      letter-spacing: 1px;
+    }
+    &-text {
+      font-family: $text-font;
+      font-size: 30px;
+      color: white;
+      line-height: 35px;
+      letter-spacing: 1px;
+      background-color: rgba(253, 240, 213, 0.7);
+      border-radius: 15px;
+      padding: 20px;
+      color: black;
     }
   }
 }
