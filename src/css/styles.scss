@@ -3,21 +3,24 @@ $secondary: rgb(217, 42, 66);
 $title-font: 'Nerko One', cursive;
 $text-font: 'Yeon Sung', cursive;;
 
+.hidden {
+  display: hidden;
+}
+
 .d-flex {
   display: flex;
 }
 
 #content {
   flex-direction: column;
-  background-color: $primary;
   z-index: -1;
 }
 
 .nav {
   justify-content: space-around;
   align-items: center;
-  width: 100%;
   padding: 10px 50px;
+  background-color: $primary;
   img {
     width: 140px;
   }
@@ -79,6 +82,194 @@ $text-font: 'Yeon Sung', cursive;;
       border-radius: 15px;
       padding: 20px;
       color: black;
+    }
+  }
+}
+
+.menu {
+  padding: 100px 0;
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    grid-gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    &-item1 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      margin: 0 auto;
+      &-img {
+        width: 370px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
+    }
+    &-item2 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 63%;
+      margin: 0 auto;
+      &-img {
+        width: 400px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
+    }
+    &-item3 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 58%;
+      margin: 0 auto;
+      &-img {
+        width: 400px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
+    }
+    &-item4 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 65%;
+      margin: 0 auto;
+      &-img {
+        width: 470px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
+    }
+    &-item5 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 65%;
+      margin: 0 auto;
+      &-img {
+        width: 480px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
+    }
+    &-item6 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 53%;
+      margin: 0 auto;
+      &-img {
+        width: 345px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
+    }
+    &-item7 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 53%;
+      margin: 0 auto;
+      &-img {
+        width: 340px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
+    }
+    &-item8 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 53%;
+      margin: 0 auto;
+      &-img {
+        width: 360px;
+      }
+      &-title {
+        font-family: $text-font;
+        font-size: 35px;
+        align-self: flex-start;
+        margin-top: 30px;
+      }
+      &-price {
+        font-family: $text-font;
+        font-size: 45px;
+        align-self: flex-start;
+        margin-top: 20px;
+      }
     }
   }
 }

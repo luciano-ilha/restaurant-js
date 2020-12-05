@@ -1,6 +1,5 @@
 import './home';
-import '../css/reset.css'
+import './menu';
+import '../css/reset.scss';
 import '../css/styles.scss';
-// import './menu';
 // import './contact';
-// import img from '../assets/rpsscreenshot.png';
