@@ -274,6 +274,61 @@ $text-font: 'Yeon Sung', cursive;;
   }
 }
 
+.contact {
+  padding: 100px 0;
+  background-color: $primary;
+  &-box {
+    width: 50%;
+    margin: 0 auto;
+    &-form {
+      flex-direction: column;
+      &-label {
+        font-family: $text-font;
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+      &-input {
+        font-family: $text-font;
+        font-size: 25px;
+        margin-bottom: 40px;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid $secondary;
+        width: 50%;
+        background-color: rgb(255, 237, 120);
+        color: $secondary;
+      }
+      &-text {
+        font-family: $text-font;
+        font-size: 25px;
+        height: 300px;
+        background-color: rgb(255, 237, 120);
+        color: $secondary;
+        padding: 15px;
+        margin-bottom: 30px;
+      }
+      &-btn {
+        font-family: $title-font;
+        font-size: 35px;
+        width: 180px;
+        height: 60px;
+        letter-spacing: 1.7px;
+        background-color: $secondary;
+        color: $primary;
+        &:hover {
+          cursor: pointer;
+          animation: color-change 0.5s infinite;
+            @keyframes color-change {
+              0% { color: $secondary; }
+              50% { color: $primary; }
+              100% { color: $secondary; }
+            }
+        }
+      }
+    }
+  }
+}
+
 .footer {
   height: 120px;
   background-color: black;

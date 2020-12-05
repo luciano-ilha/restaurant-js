@@ -13,8 +13,8 @@ import twitter from '../assets/twitter-icon.png';
 import mail from '../assets/email-icon.png';
 
 const elMenu = document.createElement('div');
-export const menuFooter = document.querySelector('.menu-footer');
-export { elMenu };
+const menuFooter = document.querySelector('.menu-footer');
+export { elMenu, menuFooter };
 
 const menu = () => {
   elMenu.classList.add('menu', 'd-flex');
@@ -184,4 +184,4 @@ const footer = () => {
 }
 
 menu();
-footer()
+footer();
