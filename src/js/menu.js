@@ -17,7 +17,7 @@ const menuFooter = document.querySelector('.menu-footer');
 export { elMenu, menuFooter };
 
 const menu = () => {
-  elMenu.classList.add('menu', 'd-flex');
+  elMenu.classList.add('menu', 'hidden');
   mainContent.appendChild(elMenu);
 
   const menuBox = document.createElement('div');
@@ -155,7 +155,7 @@ const menu = () => {
 
 const footer = () => {
   const elFooter = document.createElement('div');
-  elFooter.classList.add('footer', 'menu-footer','d-flex');
+  elFooter.classList.add('footer', 'menu-footer','hidden');
   mainContent.appendChild(elFooter);
 
   const footerBox = document.createElement('div');

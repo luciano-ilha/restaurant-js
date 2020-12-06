@@ -9,7 +9,7 @@ const contactFooter = document.querySelector('.contact-footer');
 export { elContact, contactFooter };
 
 const contact = () => {
-  elContact.classList.add('contact', 'd-flex');
+  elContact.classList.add('contact', 'hidden');
   mainContent.appendChild(elContact);
 
   const contactBox = document.createElement('div');
@@ -61,7 +61,7 @@ const contact = () => {
 
 const footer = () => {
   const elFooter = document.createElement('div');
-  elFooter.classList.add('footer', 'contact-footer','d-flex');
+  elFooter.classList.add('footer', 'contact-footer','hidden');
   mainContent.appendChild(elFooter);
 
   const footerBox = document.createElement('div');

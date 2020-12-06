@@ -10,7 +10,7 @@ const menuHome = document.createElement('span');
 const menuMenu = document.createElement('span');
 const menuContact = document.createElement('span');
 const elAbout = document.createElement('div');
-export { mainContent, elAbout };
+export { mainContent, menuHome, menuMenu, menuContact, elAbout };
 
 
 const content = () => {
