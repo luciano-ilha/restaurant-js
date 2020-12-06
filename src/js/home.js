@@ -6,11 +6,9 @@ import mail from '../assets/email-icon.png';
 
 const mainContent = document.getElementById('content');
 const navMenu = document.createElement('div');
-const menuHome = document.createElement('span');
-const menuMenu = document.createElement('span');
-const menuContact = document.createElement('span');
 const elAbout = document.createElement('div');
-export { mainContent, menuHome, menuMenu, menuContact, elAbout, content, navigation, about, footer };
+const footerHome = document.querySelector('.home-footer');
+export { mainContent, elAbout, footerHome, content, navigation, about, footer };
 
 const content = () => {
   mainContent.classList.add('d-flex');
@@ -25,12 +23,15 @@ const navigation = () => {
   elNav.appendChild(imgEl);
   navMenu.classList.add('nav-menu', 'd-flex');
   elNav.appendChild(navMenu);
+  const menuHome = document.createElement('span');
   menuHome.classList.add('nav-menu-item', 'nav1');
   menuHome.innerHTML = "HOME";
   navMenu.appendChild(menuHome);
+  const menuMenu = document.createElement('span');
   menuMenu.classList.add('nav-menu-item', 'nav2');
   menuMenu.innerHTML = "MENU";
   navMenu.appendChild(menuMenu)
+  const menuContact = document.createElement('span');
   menuContact.classList.add('nav-menu-item', 'nav3');
   menuContact.innerHTML = "CONTACT";
   navMenu.appendChild(menuContact);
@@ -62,38 +63,30 @@ const about = () => {
 
 const footer = () => {
   const elFooter = document.createElement('div');
-  elFooter.classList.add('footer', 'd-flex');
+  elFooter.classList.add('home-footer', 'd-flex');
   mainContent.appendChild(elFooter);
 
   const footerBox = document.createElement('div');
-  footerBox.classList.add('footer-box', 'd-flex');
+  footerBox.classList.add('home-footer-box', 'd-flex');
   elFooter.appendChild(footerBox);
 
   const boxItem1 = new Image();
   boxItem1.src = insta;
-  boxItem1.classList.add('footer-box-item');
+  boxItem1.classList.add('home-footer-box-item');
   footerBox.appendChild(boxItem1);
 
   const boxItem2 = new Image();
   boxItem2.src = face;
-  boxItem2.classList.add('footer-box-item2');
+  boxItem2.classList.add('home-footer-box-item2');
   footerBox.appendChild(boxItem2);
 
   const boxItem3 = new Image();
   boxItem3.src = twitter;
-  boxItem3.classList.add('footer-box-item2');
+  boxItem3.classList.add('home-footer-box-item2');
   footerBox.appendChild(boxItem3);
 
   const boxItem4 = new Image();
   boxItem4.src = mail;
-  boxItem4.classList.add('footer-box-item');
+  boxItem4.classList.add('home-footer-box-item');
   footerBox.appendChild(boxItem4);
 }
-
-// const myFunc = () => {
-//   alert('Hello World');
-// }
-
-// const myMenu = document.querySelector('.nav1');
-// myMenu.addEventListener('click', myFunc);
-// console.log(myMenu);

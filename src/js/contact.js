@@ -5,8 +5,8 @@ import twitter from '../assets/twitter-icon.png';
 import mail from '../assets/email-icon.png';
 
 const elContact = document.createElement('div');
-const contactFooter = document.querySelector('.contact-footer');
-export { elContact, contactFooter };
+const footerContact = document.querySelector('.contact-footer');
+export { elContact, footerContact, contact, contactFooter };
 
 const contact = () => {
   elContact.classList.add('contact', 'hidden');
@@ -59,35 +59,32 @@ const contact = () => {
   boxForm.appendChild(formSubmitBtn);
 }
 
-const footer = () => {
+const contactFooter = () => {
   const elFooter = document.createElement('div');
-  elFooter.classList.add('footer', 'contact-footer','hidden');
+  elFooter.classList.add('contact-footer','hidden');
   mainContent.appendChild(elFooter);
 
   const footerBox = document.createElement('div');
-  footerBox.classList.add('footer-box', 'd-flex');
+  footerBox.classList.add('contact-footer-box', 'd-flex');
   elFooter.appendChild(footerBox);
 
   const boxItem1 = new Image();
   boxItem1.src = insta;
-  boxItem1.classList.add('footer-box-item');
+  boxItem1.classList.add('contact-footer-box-item');
   footerBox.appendChild(boxItem1);
 
   const boxItem2 = new Image();
   boxItem2.src = face;
-  boxItem2.classList.add('footer-box-item2');
+  boxItem2.classList.add('contact-footer-box-item2');
   footerBox.appendChild(boxItem2);
 
   const boxItem3 = new Image();
   boxItem3.src = twitter;
-  boxItem3.classList.add('footer-box-item2');
+  boxItem3.classList.add('contact-footer-box-item2');
   footerBox.appendChild(boxItem3);
 
   const boxItem4 = new Image();
   boxItem4.src = mail;
-  boxItem4.classList.add('footer-box-item');
+  boxItem4.classList.add('contact-footer-box-item');
   footerBox.appendChild(boxItem4);
 }
-
-contact();
-footer();

@@ -13,8 +13,8 @@ import twitter from '../assets/twitter-icon.png';
 import mail from '../assets/email-icon.png';
 
 const elMenu = document.createElement('div');
-const menuFooter = document.querySelector('.menu-footer');
-export { elMenu, menuFooter };
+const footerMenu = document.querySelector('.menu-footer');
+export { elMenu, footerMenu, menu, menuFooter };
 
 const menu = () => {
   elMenu.classList.add('menu', 'hidden');
@@ -153,35 +153,32 @@ const menu = () => {
   boxItem8.appendChild(item8Price);
 }
 
-const footer = () => {
+const menuFooter = () => {
   const elFooter = document.createElement('div');
-  elFooter.classList.add('footer', 'menu-footer','hidden');
+  elFooter.classList.add('menu-footer','hidden');
   mainContent.appendChild(elFooter);
 
   const footerBox = document.createElement('div');
-  footerBox.classList.add('footer-box', 'd-flex');
+  footerBox.classList.add('menu-footer-box', 'd-flex');
   elFooter.appendChild(footerBox);
 
   const boxItem1 = new Image();
   boxItem1.src = insta;
-  boxItem1.classList.add('footer-box-item');
+  boxItem1.classList.add('menu-footer-box-item');
   footerBox.appendChild(boxItem1);
 
   const boxItem2 = new Image();
   boxItem2.src = face;
-  boxItem2.classList.add('footer-box-item2');
+  boxItem2.classList.add('menu-footer-box-item2');
   footerBox.appendChild(boxItem2);
 
   const boxItem3 = new Image();
   boxItem3.src = twitter;
-  boxItem3.classList.add('footer-box-item2');
+  boxItem3.classList.add('menu-footer-box-item2');
   footerBox.appendChild(boxItem3);
 
   const boxItem4 = new Image();
   boxItem4.src = mail;
-  boxItem4.classList.add('footer-box-item');
+  boxItem4.classList.add('menu-footer-box-item');
   footerBox.appendChild(boxItem4);
 }
-
-menu();
-footer();
