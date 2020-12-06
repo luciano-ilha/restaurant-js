@@ -10,8 +10,7 @@ const menuHome = document.createElement('span');
 const menuMenu = document.createElement('span');
 const menuContact = document.createElement('span');
 const elAbout = document.createElement('div');
-export { mainContent, menuHome, menuMenu, menuContact, elAbout };
-
+export { mainContent, menuHome, menuMenu, menuContact, elAbout, content, navigation, about, footer };
 
 const content = () => {
   mainContent.classList.add('d-flex');
@@ -26,13 +25,13 @@ const navigation = () => {
   elNav.appendChild(imgEl);
   navMenu.classList.add('nav-menu', 'd-flex');
   elNav.appendChild(navMenu);
-  menuHome.classList.add('nav-menu-item');
+  menuHome.classList.add('nav-menu-item', 'nav1');
   menuHome.innerHTML = "HOME";
   navMenu.appendChild(menuHome);
-  menuMenu.classList.add('nav-menu-item');
+  menuMenu.classList.add('nav-menu-item', 'nav2');
   menuMenu.innerHTML = "MENU";
   navMenu.appendChild(menuMenu)
-  menuContact.classList.add('nav-menu-item');
+  menuContact.classList.add('nav-menu-item', 'nav3');
   menuContact.innerHTML = "CONTACT";
   navMenu.appendChild(menuContact);
 }
@@ -91,7 +90,10 @@ const footer = () => {
   footerBox.appendChild(boxItem4);
 }
 
-content();
-navigation();
-about();
-footer();
+// const myFunc = () => {
+//   alert('Hello World');
+// }
+
+// const myMenu = document.querySelector('.nav1');
+// myMenu.addEventListener('click', myFunc);
+// console.log(myMenu);
