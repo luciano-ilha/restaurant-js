@@ -9,7 +9,7 @@ const navMenu = document.createElement('div');
 const elAbout = document.createElement('div');
 const footerHome = document.querySelector('.home-footer');
 export { mainContent, elAbout, footerHome, content, navigation, about, footer };
-
+  
 const content = () => {
   mainContent.classList.add('d-flex');
 }

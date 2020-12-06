@@ -67,6 +67,7 @@ const contactSwitch = () => {
   }
 }
 
+
 const myHome = document.querySelector('.nav1');
 myHome.addEventListener('click', homeSwitch);
 
@@ -75,3 +76,7 @@ myMenu.addEventListener('click', menuSwitch);
 
 const myContact = document.querySelector('.nav3');
 myContact.addEventListener('click', contactSwitch);
+
+// myHome.setAttribute("onclick", "homeSwitch()");
+// myMenu.setAttribute("onclick", "menuSwitch()");
+// myContact.setAttribute("onclick", "contactSwitch()");
