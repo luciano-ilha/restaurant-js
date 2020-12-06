@@ -20,34 +20,58 @@ const homeSwitch = () => {
   if (elAbout.classList.contains('hidden')) {
     elAbout.classList.remove('hidden');
     elAbout.classList.add('d-flex');
-  }
-
-  if (footerHome.classList.contains('hidden')) {
     footerHome.classList.remove('hidden');
     footerHome.classList.add('d-flex');
-  }
-
-  if (elMenu.classList.contains('d-flex')) {
     elMenu.classList.remove('d-flex');
     elMenu.classList.add('hidden');
-  }
-  
-  if (footerMenu.classList.contains('d-flex')) {
     footerMenu.classList.remove('d-flex');
     footerMenu.classList.add('hidden');
-  }
-
-  if (elContact.classList.contains('d-flex')) {
     elContact.classList.remove('d-flex');
     elContact.classList.add('hidden');
-  }
-
-  if (footerContact.classList.contains('d-flex')) {
     footerContact.classList.remove('d-flex');
     footerContact.classList.add('hidden');
   }
 }
 
-const myMenu = document.querySelector('.nav1');
-myMenu.addEventListener('click', homeSwitch);
-console.log(myMenu);
+const menuSwitch = () => {
+  if (elMenu.classList.contains('hidden')) {
+    elMenu.classList.remove('hidden');
+    elMenu.classList.add('d-flex');
+    footerMenu.classList.remove('hidden');
+    footerMenu.classList.add('d-flex');
+    elAbout.classList.remove('d-flex');
+    elAbout.classList.add('hidden');
+    footerHome.classList.remove('d-flex');
+    footerHome.classList.add('hidden');
+    elContact.classList.remove('d-flex');
+    elContact.classList.add('hidden');
+    footerContact.classList.remove('d-flex');
+    footerContact.classList.add('hidden');
+  }
+}
+
+const contactSwitch = () => {
+  if (elContact.classList.contains('hidden')) {
+    elContact.classList.remove('hidden');
+    elContact.classList.add('d-flex');
+    footerContact.classList.remove('hidden');
+    footerContact.classList.add('d-flex');
+    elAbout.classList.remove('d-flex');
+    elAbout.classList.add('hidden');
+    footerHome.classList.remove('d-flex');
+    footerHome.classList.add('hidden');
+    elMenu.classList.remove('d-flex');
+    elMenu.classList.add('hidden');
+    footerMenu.classList.remove('d-flex');
+    footerMenu.classList.add('hidden');
+  }
+}
+
+const myHome = document.querySelector('.nav1');
+myHome.addEventListener('click', homeSwitch);
+
+const myMenu = document.querySelector('.nav2');
+myMenu.addEventListener('click', menuSwitch);
+
+const myContact = document.querySelector('.nav3');
+myContact.addEventListener('click', contactSwitch);
