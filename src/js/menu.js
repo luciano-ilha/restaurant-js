@@ -1,4 +1,3 @@
-import { mainContent } from './home';
 import hot from '../assets/crispyhot.png';
 import mix from '../assets/crispymix.png';
 import meal from '../assets/crispymeal.png';
@@ -9,10 +8,11 @@ import burguer2 from '../assets/crispyburguer2.png';
 import burguer3 from '../assets/crispyburguer3.png';
 
 const elMenu = document.createElement('div');
+export const menuFragment = document.createDocumentFragment();
 
 const menu = () => {
   elMenu.classList.add('menu', 'hidden');
-  mainContent.appendChild(elMenu);
+  menuFragment.appendChild(elMenu);
   const menuBox = document.createElement('div');
   menuBox.classList.add('menu-box');
   elMenu.appendChild(menuBox);
@@ -137,5 +137,7 @@ const menu = () => {
   item8Price.innerHTML = '$17';
   boxItem8.appendChild(item8Price);
 };
+
+menu();
 
 export { elMenu, menu };

@@ -1,5 +1,5 @@
 import {
-  elAbout, content, about,
+  elAbout, content,
 } from './home';
 import { elMenu, menu } from './menu';
 import { elContact, contact } from './contact';
@@ -8,8 +8,6 @@ import '../css/reset.scss';
 import '../css/styles.scss';
 
 content();
-about();
-menu();
 contact();
 footer();
 

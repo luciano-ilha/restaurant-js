@@ -1,16 +1,20 @@
 import { navigationFragment } from '../js/navigation';
+import { menuFragment } from '../js/menu';
 const mainContent = document.getElementById('content');
 const elAbout = document.createElement('div');
+const homeFragment = document.createDocumentFragment();
 
 const content = () => {
   mainContent.classList.add('d-flex');
   mainContent.appendChild(navigationFragment);
+  mainContent.appendChild(homeFragment);
+  mainContent.appendChild(menuFragment);
 };
 
 const about = () => {
   elAbout.classList.add('home', 'd-flex');
   elAbout.style.backgroundImage = "url('home-banner.png')";
-  mainContent.appendChild(elAbout);
+  homeFragment.appendChild(elAbout);
   const aboutMask = document.createElement('div');
   aboutMask.classList.add('mask', 'd-flex');
   elAbout.appendChild(aboutMask);
@@ -28,5 +32,7 @@ const about = () => {
 };
 
 export {
-  mainContent, elAbout, content, about,
+  mainContent, elAbout, content,
 };
+
+about();
