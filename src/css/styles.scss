@@ -39,11 +39,12 @@ $text-font: 'Yeon Sung', cursive;
       &:hover {
         cursor: pointer;
         animation: color-change 0.5s infinite;
-          @keyframes color-change {
-            0% { color: $secondary; }
-            50% { color: $primary; }
-            100% { color: $secondary; }
-          }
+
+        @keyframes color-change {
+          0% { color: $secondary; }
+          50% { color: $primary; }
+          100% { color: $secondary; }
+        }
       }
     }
   }
@@ -81,7 +82,6 @@ $text-font: 'Yeon Sung', cursive;
     &-text {
       font-family: $text-font;
       font-size: 30px;
-      color: white;
       line-height: 35px;
       letter-spacing: 1px;
       background-color: rgba(253, 240, 213, 0.7);
@@ -97,8 +97,8 @@ $text-font: 'Yeon Sung', cursive;
 
   &-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(4, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: 30px;
     width: 90%;
     margin: 0 auto;
@@ -364,11 +364,12 @@ $text-font: 'Yeon Sung', cursive;
         &:hover {
           cursor: pointer;
           animation: color-change 0.5s infinite;
-            @keyframes color-change {
-              0% { color: $secondary; }
-              50% { color: $primary; }
-              100% { color: $secondary; }
-            }
+
+          @keyframes color-change {
+            0% { color: $secondary; }
+            50% { color: $primary; }
+            100% { color: $secondary; }
+          }
         }
       }
     }
@@ -389,21 +390,26 @@ $text-font: 'Yeon Sung', cursive;
       width: 60px;
       height: 60px;
       filter: invert(100%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(104%);
+
       &:hover {
         cursor: pointer;
         animation: bounce 1s linear;
       }
+
       @keyframes bounce {
-        20%,50%,80%,to{
+        20%,50%,80%,to {
           transform: translateY(0);
         }
-        40%{
+
+        40% {
           transform: translateY(-11px);
         }
-        70%{
+
+        70% {
           transform: translateY(-6px);
         }
-        90%{
+
+        90% {
           transform: translateY(-3px);
         }
       }
@@ -413,21 +419,26 @@ $text-font: 'Yeon Sung', cursive;
       width: 50px;
       height: 50px;
       filter: invert(100%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(104%);
+
       &:hover {
         cursor: pointer;
         animation: bounce 1s linear;
       }
+
       @keyframes bounce {
-        20%,50%,80%,to{
+        20%,50%,80%,to {
           transform: translateY(0);
         }
-        40%{
+
+        40% {
           transform: translateY(-11px);
         }
-        70%{
+
+        70% {
           transform: translateY(-6px);
         }
-        90%{
+
+        90% {
           transform: translateY(-3px);
         }
       }
@@ -449,21 +460,26 @@ $text-font: 'Yeon Sung', cursive;
       width: 60px;
       height: 60px;
       filter: invert(100%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(104%);
+
       &:hover {
         cursor: pointer;
         animation: bounce 1s linear;
       }
+
       @keyframes bounce {
-        20%,50%,80%,to{
+        20%,50%,80%,to {
           transform: translateY(0);
         }
-        40%{
+
+        40% {
           transform: translateY(-11px);
         }
-        70%{
+
+        70% {
           transform: translateY(-6px);
         }
-        90%{
+
+        90% {
           transform: translateY(-3px);
         }
       }
@@ -473,21 +489,26 @@ $text-font: 'Yeon Sung', cursive;
       width: 50px;
       height: 50px;
       filter: invert(100%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(104%);
+
       &:hover {
         cursor: pointer;
         animation: bounce 1s linear;
       }
+
       @keyframes bounce {
-        20%,50%,80%,to{
+        20%,50%,80%,to {
           transform: translateY(0);
         }
-        40%{
+
+        40% {
           transform: translateY(-11px);
         }
-        70%{
+
+        70% {
           transform: translateY(-6px);
         }
-        90%{
+
+        90% {
           transform: translateY(-3px);
         }
       }
@@ -509,45 +530,55 @@ $text-font: 'Yeon Sung', cursive;
       width: 60px;
       height: 60px;
       filter: invert(100%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(104%);
+
       &:hover {
         cursor: pointer;
         animation: bounce 1s linear;
       }
+
       @keyframes bounce {
-        20%,50%,80%,to{
+        20%,50%,80%,to {
           transform: translateY(0);
         }
-        40%{
+
+        40% {
           transform: translateY(-11px);
         }
-        70%{
+
+        70% {
           transform: translateY(-6px);
         }
-        90%{
+
+        90% {
           transform: translateY(-3px);
         }
       }
     }
-    
+
     &-item2 {
       width: 50px;
       height: 50px;
       filter: invert(100%) sepia(96%) saturate(18%) hue-rotate(266deg) brightness(105%) contrast(104%);
+
       &:hover {
         cursor: pointer;
         animation: bounce 1s linear;
       }
+
       @keyframes bounce {
-        20%,50%,80%,to{
+        20%,50%,80%,to {
           transform: translateY(0);
         }
-        40%{
+
+        40% {
           transform: translateY(-11px);
         }
-        70%{
+
+        70% {
           transform: translateY(-6px);
         }
-        90%{
+
+        90% {
           transform: translateY(-3px);
         }
       }
