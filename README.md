@@ -4,14 +4,9 @@ It's a Restaurant page., builded with HTML, CSS and JavaScript. Change views whe
 
 ![Screenshot](src/assets/restaurantscreen.png)
 
-## Built With
-
-- 
-
 ## Live Demo
 
 [Restaurant Page](https://rawcdn.githack.com/luciano-ilha/restaurant-js/5ceaa07d155fc4e8673f93df56bce63f3cd078e4/dist/index.html)
-
 
 ## Getting Started
 
