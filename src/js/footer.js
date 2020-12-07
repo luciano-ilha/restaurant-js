@@ -32,4 +32,4 @@ export default () => {
   boxItem4.src = mail;
   boxItem4.classList.add('home-footer-box-item');
   footerBox.appendChild(boxItem4);
-}
+};

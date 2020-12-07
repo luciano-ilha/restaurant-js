@@ -1,12 +1,12 @@
-import './home';
-import './menu';
-import './contact';
-import footer from '../js/footer';
+import {
+  elAbout, content, navigation, about,
+} from './home';
+import { elMenu, menu } from './menu';
+import { elContact, contact } from './contact';
+import footer from './footer';
 import '../css/reset.scss';
 import '../css/styles.scss';
-import { elAbout, content, navigation, about } from '../js/home';
-import { elMenu, menu } from '../js/menu';
-import { elContact, contact } from '../js/contact';
+
 
 content();
 navigation();
@@ -24,7 +24,7 @@ const homeSwitch = () => {
     elContact.classList.remove('d-flex');
     elContact.classList.add('hidden');
   }
-}
+};
 
 const menuSwitch = () => {
   if (elMenu.classList.contains('hidden')) {
@@ -35,7 +35,7 @@ const menuSwitch = () => {
     elContact.classList.remove('d-flex');
     elContact.classList.add('hidden');
   }
-}
+};
 
 const contactSwitch = () => {
   if (elContact.classList.contains('hidden')) {
@@ -46,7 +46,7 @@ const contactSwitch = () => {
     elMenu.classList.remove('d-flex');
     elMenu.classList.add('hidden');
   }
-}
+};
 
 const myHome = document.querySelector('.nav1');
 myHome.addEventListener('click', homeSwitch);
