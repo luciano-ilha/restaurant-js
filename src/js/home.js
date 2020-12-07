@@ -1,8 +1,10 @@
+import { navigationFragment } from '../js/navigation';
 const mainContent = document.getElementById('content');
 const elAbout = document.createElement('div');
 
 const content = () => {
   mainContent.classList.add('d-flex');
+  mainContent.appendChild(navigationFragment);
 };
 
 const about = () => {

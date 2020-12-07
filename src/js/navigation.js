@@ -1,10 +1,11 @@
-import { mainContent } from './home';
 import img from '../assets/lph_logo.png';
 
-export default () => {
+export const navigationFragment = document.createDocumentFragment();
+
+const navigation = () => {
   const elNav = document.createElement('div');
   elNav.classList.add('nav', 'd-flex');
-  mainContent.appendChild(elNav);
+  navigationFragment.appendChild(elNav);
   const imgEl = new Image();
   imgEl.src = img;
   elNav.appendChild(imgEl);
@@ -24,3 +25,5 @@ export default () => {
   menuContact.innerHTML = 'CONTACT';
   navMenu.appendChild(menuContact);
 };
+
+navigation();

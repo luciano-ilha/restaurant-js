@@ -1,4 +1,3 @@
-import navigation from './navigation';
 import {
   elAbout, content, about,
 } from './home';
@@ -8,7 +7,6 @@ import footer from './footer';
 import '../css/reset.scss';
 import '../css/styles.scss';
 
-navigation();
 content();
 about();
 menu();
