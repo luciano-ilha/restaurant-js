@@ -1,8 +1,8 @@
 # Restaurant JS
 
-It's a Restaurant Page.
+It's a Restaurant page., builded with HTML, CSS and JavaScript. Change views when navigation links are clicked (home, menu and contact).
 
-![Screenshot]()
+![Screenshot](src/assets/restaurantscreen.png)
 
 ## Built With
 
@@ -10,12 +10,8 @@ It's a Restaurant Page.
 
 ## Live Demo
 
-[Restaurant Page]()
+[Restaurant Page](https://rawcdn.githack.com/luciano-ilha/restaurant-js/5ceaa07d155fc4e8673f93df56bce63f3cd078e4/dist/index.html)
 
-
-### Prerequisites
-
-- 
 
 ## Getting Started
 
