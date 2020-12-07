@@ -13,11 +13,9 @@ const elMenu = document.createElement('div');
 const menu = () => {
   elMenu.classList.add('menu', 'hidden');
   mainContent.appendChild(elMenu);
-
   const menuBox = document.createElement('div');
   menuBox.classList.add('menu-box');
   elMenu.appendChild(menuBox);
-
   const boxItem1 = document.createElement('div');
   boxItem1.classList.add('menu-box-item1', 'd-flex');
   menuBox.appendChild(boxItem1);
@@ -33,7 +31,6 @@ const menu = () => {
   item1Price.classList.add('menu-box-item1-price');
   item1Price.innerHTML = '$10';
   boxItem1.appendChild(item1Price);
-
   const boxItem2 = document.createElement('div');
   boxItem2.classList.add('menu-box-item2', 'd-flex');
   menuBox.appendChild(boxItem2);
@@ -49,7 +46,6 @@ const menu = () => {
   item2Price.classList.add('menu-box-item2-price');
   item2Price.innerHTML = '$18';
   boxItem2.appendChild(item2Price);
-
   const boxItem3 = document.createElement('div');
   boxItem3.classList.add('menu-box-item3', 'd-flex');
   menuBox.appendChild(boxItem3);
@@ -65,7 +61,6 @@ const menu = () => {
   item3Price.classList.add('menu-box-item3-price');
   item3Price.innerHTML = '$23';
   boxItem3.appendChild(item3Price);
-
   const boxItem4 = document.createElement('div');
   boxItem4.classList.add('menu-box-item4', 'd-flex');
   menuBox.appendChild(boxItem4);
@@ -81,7 +76,6 @@ const menu = () => {
   item4Price.classList.add('menu-box-item4-price');
   item4Price.innerHTML = '$30';
   boxItem4.appendChild(item4Price);
-
   const boxItem5 = document.createElement('div');
   boxItem5.classList.add('menu-box-item5', 'd-flex');
   menuBox.appendChild(boxItem5);
@@ -97,7 +91,6 @@ const menu = () => {
   item5Price.classList.add('menu-box-item5-price');
   item5Price.innerHTML = '$38';
   boxItem5.appendChild(item5Price);
-
   const boxItem6 = document.createElement('div');
   boxItem6.classList.add('menu-box-item6', 'd-flex');
   menuBox.appendChild(boxItem6);
@@ -113,7 +106,6 @@ const menu = () => {
   item6Price.classList.add('menu-box-item6-price');
   item6Price.innerHTML = '$10';
   boxItem6.appendChild(item6Price);
-
   const boxItem7 = document.createElement('div');
   boxItem7.classList.add('menu-box-item7', 'd-flex');
   menuBox.appendChild(boxItem7);
@@ -129,7 +121,6 @@ const menu = () => {
   item7Price.classList.add('menu-box-item7-price');
   item7Price.innerHTML = '$13';
   boxItem7.appendChild(item7Price);
-
   const boxItem8 = document.createElement('div');
   boxItem8.classList.add('menu-box-item8', 'd-flex');
   menuBox.appendChild(boxItem8);

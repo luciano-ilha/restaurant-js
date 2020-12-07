@@ -1,5 +1,6 @@
+import navigation from './navigation';
 import {
-  elAbout, content, navigation, about,
+  elAbout, content, about,
 } from './home';
 import { elMenu, menu } from './menu';
 import { elContact, contact } from './contact';
@@ -7,9 +8,8 @@ import footer from './footer';
 import '../css/reset.scss';
 import '../css/styles.scss';
 
-
-content();
 navigation();
+content();
 about();
 menu();
 contact();
