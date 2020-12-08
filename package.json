@@ -4,6 +4,7 @@
   "description": "It's a Restaurant Page.",
   "private": true,
   "scripts": {
+    "start": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.config.js",
     "serve": "webpack-dev-server"
   },
