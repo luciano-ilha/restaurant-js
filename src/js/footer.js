@@ -3,7 +3,8 @@ import face from '../assets/facebook-icon.png';
 import twitter from '../assets/twitter-icon.png';
 import mail from '../assets/email-icon.png';
 
-export const footerFragment = document.createDocumentFragment();
+const footerFragment = document.createDocumentFragment();
+export default footerFragment;
 
 const footer = () => {
   const elFooter = document.createElement('div');

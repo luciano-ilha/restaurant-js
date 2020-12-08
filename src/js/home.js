@@ -1,7 +1,7 @@
-import { navigationFragment } from './navigation';
+import navigationFragment from './navigation';
 import { menuFragment } from './menu';
 import { contactFragment } from './contact';
-import { footerFragment } from './footer';
+import footerFragment from './footer';
 
 const mainContent = document.getElementById('content');
 const elAbout = document.createElement('div');

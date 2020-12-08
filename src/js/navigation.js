@@ -1,7 +1,7 @@
 import img from '../assets/lph_logo.png';
 
-export const navigationFragment = document.createDocumentFragment();
-
+const navigationFragment = document.createDocumentFragment();
+export default navigationFragment;
 const navigation = () => {
   const elNav = document.createElement('div');
   elNav.classList.add('nav', 'd-flex');
