@@ -1,5 +1,7 @@
 import { navigationFragment } from '../js/navigation';
 import { menuFragment } from '../js/menu';
+import { contactFragment } from '../js/contact';
+import { footerFragment } from '../js/footer';
 const mainContent = document.getElementById('content');
 const elAbout = document.createElement('div');
 const homeFragment = document.createDocumentFragment();
@@ -9,6 +11,8 @@ const content = () => {
   mainContent.appendChild(navigationFragment);
   mainContent.appendChild(homeFragment);
   mainContent.appendChild(menuFragment);
+  mainContent.appendChild(contactFragment);
+  mainContent.appendChild(footerFragment);
 };
 
 const about = () => {
@@ -31,8 +35,8 @@ const about = () => {
   aboutContent.appendChild(contentText);
 };
 
+about();
+
 export {
   mainContent, elAbout, content,
 };
-
-about();

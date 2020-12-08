@@ -1,10 +1,9 @@
-import { mainContent } from './home';
-
 const elContact = document.createElement('div');
+export const contactFragment = document.createDocumentFragment();
 
 const contact = () => {
   elContact.classList.add('contact', 'hidden');
-  mainContent.appendChild(elContact);
+  contactFragment.appendChild(elContact);
   const contactBox = document.createElement('div');
   contactBox.classList.add('contact-box');
   elContact.appendChild(contactBox);
@@ -45,4 +44,6 @@ const contact = () => {
   boxForm.appendChild(formSubmitBtn);
 };
 
-export { elContact, contact };
+contact();
+
+export { elContact };

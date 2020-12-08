@@ -1,13 +1,14 @@
-import { mainContent } from './home';
 import insta from '../assets/instagram-icon.png';
 import face from '../assets/facebook-icon.png';
 import twitter from '../assets/twitter-icon.png';
 import mail from '../assets/email-icon.png';
 
-export default () => {
+export const footerFragment = document.createDocumentFragment();
+
+const footer = () => {
   const elFooter = document.createElement('div');
   elFooter.classList.add('home-footer', 'd-flex');
-  mainContent.appendChild(elFooter);
+  footerFragment.appendChild(elFooter);
   const footerBox = document.createElement('div');
   footerBox.classList.add('home-footer-box', 'd-flex');
   elFooter.appendChild(footerBox);
@@ -28,3 +29,5 @@ export default () => {
   boxItem4.classList.add('home-footer-box-item');
   footerBox.appendChild(boxItem4);
 };
+
+footer();

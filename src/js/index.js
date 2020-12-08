@@ -1,15 +1,12 @@
 import {
   elAbout, content,
 } from './home';
-import { elMenu, menu } from './menu';
-import { elContact, contact } from './contact';
-import footer from './footer';
+import { elMenu } from './menu';
+import { elContact } from './contact';
 import '../css/reset.scss';
 import '../css/styles.scss';
 
 content();
-contact();
-footer();
 
 const homeSwitch = () => {
   if (elAbout.classList.contains('hidden')) {

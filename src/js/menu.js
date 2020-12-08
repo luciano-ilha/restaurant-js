@@ -140,4 +140,4 @@ const menu = () => {
 
 menu();
 
-export { elMenu, menu };
+export { elMenu };
