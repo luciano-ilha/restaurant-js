@@ -1,7 +1,8 @@
-import { navigationFragment } from '../js/navigation';
-import { menuFragment } from '../js/menu';
-import { contactFragment } from '../js/contact';
-import { footerFragment } from '../js/footer';
+import { navigationFragment } from './navigation';
+import { menuFragment } from './menu';
+import { contactFragment } from './contact';
+import { footerFragment } from './footer';
+
 const mainContent = document.getElementById('content');
 const elAbout = document.createElement('div');
 const homeFragment = document.createDocumentFragment();
